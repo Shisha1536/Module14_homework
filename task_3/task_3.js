@@ -2,8 +2,9 @@ const btn = document.querySelector('.btn');
 let div = document.querySelector('div');
 function request(callback){
     const value = Number(document.querySelector('input').value);
-    if (value < 1 && value > 10) {
-        console.log("число вне диапазона от 1 до 10")
+    debugger
+    if (value < 1 || value > 10) {
+        alert("число вне диапазона от 1 до 10")
     } else {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', `https://jsonplaceholder.typicode.com/photos?_limit=${value}`);
