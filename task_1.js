@@ -37,4 +37,4 @@ for (const student of students) {
     list.push(result);
 };
 
-console.log(list);
+console.log("list: ", list);

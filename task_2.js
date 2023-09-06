@@ -16,4 +16,4 @@ const jsonString = `
 `;
 const jsonDocument = JSON.parse(jsonString);
 const list = jsonDocument.list;
-console.log(list);
+console.log("list: ", list);
