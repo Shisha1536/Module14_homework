@@ -2,7 +2,6 @@ const btn = document.querySelector('.btn');
 let div = document.querySelector('div');
 function request(callback){
     const value = Number(document.querySelector('input').value);
-    debugger
     if (value < 1 || value > 10) {
         alert("число вне диапазона от 1 до 10")
     } else {
@@ -18,11 +17,9 @@ function request(callback){
             }
             }
         };
-        
         xhr.onerror = function() {
             console.log('Ошибка! Статус ответа: ', xhr.status);
         };
-        
         xhr.send();
             }
 };
